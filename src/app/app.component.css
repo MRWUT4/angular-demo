@@ -1,3 +1,10 @@
+.wrapper
+{
+	max-width: 75em;
+	display: block;
+	margin: auto;
+}
+
 .head
 {
 	width: 96%;
@@ -12,6 +19,8 @@
 	display: inline;
 	float: left;
 
+	margin-right: 2em; 
+
     vertical-align: bottom;
     display: inline-block;
 }
@@ -19,11 +28,11 @@
 .navigation
 {
 	margin-top: .8em;
-	margin-right: 2em;
+	/*margin-right: 2em;*/
 	float: right;
 }
 
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 930px) {
 
 	.navigation
 	{
