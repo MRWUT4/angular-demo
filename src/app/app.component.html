@@ -1,0 +1,28 @@
+<div class='head'>
+	<div class='title'>
+		{{title}}
+	</div>
+
+	<navigation class='navigation'></navigation>
+</div>
+
+<div class='categorys'>
+	<div class='filterLabel'>Filter:</div>
+	<categoryradiobutton *ngFor='let category of categorys' (select)='onCategorySelect($event)'
+		[id]=category.id
+		[color]=category.color
+		[label]=category.label
+		[selected]=category.selected
+	></categoryradiobutton>
+</div>
+
+<div class='products'>
+	<productcard *ngFor='let product of products'
+		[name]=product.name 
+		[category]=product.category.label
+		[color]=product.category.color
+		[buttonLabel]=product.buttonLabel 
+		[description]=product.description
+	></productcard>
+	<div class='error' *ngIf='!hasProducts'>There are no products matching the current selection.</div>
+</div>

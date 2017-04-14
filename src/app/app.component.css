@@ -1,0 +1,60 @@
+.head
+{
+	width: 96%;
+	float: left;
+	margin: 1em 2% 1em 2%;
+}
+
+
+.title
+{
+	font-size: 2em;
+	display: inline;
+	float: left;
+
+    vertical-align: bottom;
+    display: inline-block;
+}
+
+.navigation
+{
+	margin-top: .8em;
+	margin-right: 2em;
+	float: right;
+}
+
+@media only screen and (max-width: 830px) {
+
+	.navigation
+	{
+		float: left;
+	}
+}
+
+.products
+{
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.categorys
+{
+	width: 96%;
+	overflow: hidden;
+	float: left;
+	margin: 1em 3% 1em 3%;
+}
+
+
+.filterLabel
+{
+	float: left;
+	padding: .2em .2em .2em 0em;
+}
+
+.error
+{
+	font-size: 1.2em;
+	float: left;
+	padding: 2em;	
+}

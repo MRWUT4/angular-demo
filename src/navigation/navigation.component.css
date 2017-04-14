@@ -1,0 +1,36 @@
+a
+{
+	text-decoration: none;
+	color: #000;
+}
+
+a:active
+{
+	color: #eee;
+}
+
+ul
+{
+	list-style: none;
+	float: left;
+}
+
+li
+{
+	float: left;
+	margin-left: 1em;
+}
+
+@media only screen and (max-width: 830px) {
+
+	li
+	{
+		margin-left: 0em;
+		margin-right: 1em;
+	}
+}
+
+.active
+{
+	text-decoration: underline;
+}
